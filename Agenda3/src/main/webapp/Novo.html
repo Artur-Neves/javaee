@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang=pt-br"">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Agenda de Contatos</title>
+	<!-- linha que torna um icone como favorito, ou seja o icone que fuca do lad-->
+	<link rel="icon" href="imagens/agenda.png">
+	<!--cria um link entre esta pÃ¡gina com a pÃ¡gina css-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1> criar novo contato </h1>
+	<form name="NomeDoForm" action="insert">
+		<table>
+			<tr>
+               <td> <input type="text" name="nome" placeholder="Nome" class="caixa1" required> </td>
+			</tr>
+			<tr>
+               <td> <input type="text" name="fone" placeholder="Telefone" class="caixa2" required> </td>
+			</tr>
+			<tr>
+				<td> <input type="email" name="email" placeholder="Email" class="caixa1" required> </td>
+			</tr>
+		</table>
+		<input type="button" value="Adcionar" class="acessar" onclick="validar()">
+	</form>
+	<script src="scripts/Validador.js"></script>
+</body>
+
+</html>
